@@ -1,91 +1,70 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="NEXORA — practical digital services for local businesses.">
-  <title>NEXORA | Build Tomorrow, Today</title>
-  <style>
-    :root { --navy:#08152d; --blue:#397bff; --ink:#17233b; --muted:#64718a; --pale:#f3f7ff; }
-    * { box-sizing:border-box; }
-    body { margin:0; font-family:Arial,Helvetica,sans-serif; color:var(--ink); line-height:1.6; }
-    header { background:var(--navy); color:white; padding:22px max(6vw,22px); display:flex; justify-content:space-between; align-items:center; }
-    .logo { font-size:1.45rem; font-weight:800; letter-spacing:2px; }
-    nav a { color:#dbe7ff; text-decoration:none; margin-left:22px; font-size:.95rem; }
-    .hero { background:linear-gradient(135deg,#08152d,#123a78); color:white; padding:90px max(7vw,24px); }
-    .eyebrow { color:#9fc0ff; text-transform:uppercase; letter-spacing:2px; font-size:.8rem; font-weight:bold; }
-    h1 { font-size:clamp(2.5rem,7vw,5rem); line-height:1.04; max-width:760px; margin:18px 0; }
-    .hero p { max-width:620px; color:#d4e0f7; font-size:1.12rem; }
-    .cta { display:inline-block; margin-top:18px; background:var(--blue); color:white; padding:13px 22px; border-radius:8px; text-decoration:none; font-weight:bold; }
-    section { padding:65px max(7vw,24px); }
-    h2 { font-size:2rem; margin:0 0 12px; }
-    .intro { color:var(--muted); max-width:680px; margin-top:0; }
-    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; margin-top:28px; }
-    .card { border:1px solid #e1e8f4; border-radius:14px; padding:24px; background:white; }
-    .card h3 { margin-top:0; }
-    .card p { color:var(--muted); margin-bottom:0; }
-    .about { background:var(--pale); }
-    form { max-width:600px; display:grid; gap:12px; margin-top:24px; }
-    input, textarea { width:100%; padding:13px; border:1px solid #cbd5e5; border-radius:8px; font:inherit; }
-    textarea { min-height:120px; resize:vertical; }
-    button { border:0; cursor:pointer; background:var(--blue); color:white; padding:14px 20px; border-radius:8px; font:inherit; font-weight:bold; }
-    #notice { color:#17633a; font-weight:bold; }
-    footer { background:var(--navy); color:#cbd8f0; padding:25px max(7vw,24px); }
-    @media(max-width:600px) { header { align-items:flex-start; gap:12px; flex-direction:column; } nav a { margin:0 16px 0 0; } .hero { padding-top:65px; padding-bottom:65px; } }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="NEXORA — practical digital services for local businesses in Kashmir.">
+<title>NEXORA | Build Tomorrow, Today</title>
+<style>
+:root{--navy:#08152d;--blue:#397bff;--gold:#e7b94f;--ink:#17233b;--muted:#64718a;--pale:#f3f7ff}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6}
+header{background:var(--navy);color:white;padding:20px max(6vw,22px);display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+.logo{font-size:1.45rem;font-weight:800;letter-spacing:2px} nav a{color:#dbe7ff;text-decoration:none;margin-left:20px;font-size:.95rem}
+.hero{background:linear-gradient(135deg,#08152d,#123a78);color:white;padding:82px max(7vw,24px)}
+.eyebrow{color:#a9c5ff;text-transform:uppercase;letter-spacing:2px;font-size:.8rem;font-weight:bold}
+h1{font-size:clamp(2.5rem,7vw,5rem);line-height:1.04;max-width:760px;margin:18px 0}
+.hero p{max-width:650px;color:#d4e0f7;font-size:1.12rem}
+.cta{display:inline-block;margin-top:18px;background:var(--blue);color:white;padding:13px 22px;border-radius:8px;text-decoration:none;font-weight:bold}
+section{padding:64px max(7vw,24px)} h2{font-size:2rem;margin:0 0 12px} .intro{color:var(--muted);max-width:700px;margin-top:0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:28px}
+.card{border:1px solid #e1e8f4;border-radius:14px;padding:24px;background:white} .card h3{margin-top:0} .card p{color:var(--muted);margin-bottom:0}
+.about{background:var(--pale)}
+.portfolio-card{border:1px solid #e1e8f4;border-radius:16px;overflow:hidden;background:white;max-width:760px;margin-top:26px}
+.portfolio-card img{display:block;width:100%;height:auto} .portfolio-copy{padding:20px 22px}
+.tag{display:inline-block;background:#fff4d8;color:#76520b;padding:4px 10px;border-radius:99px;font-size:.78rem;font-weight:bold}
+.note{font-size:.9rem;color:var(--muted)}
+form{max-width:600px;display:grid;gap:12px;margin-top:24px} input,textarea{width:100%;padding:13px;border:1px solid #cbd5e5;border-radius:8px;font:inherit}
+textarea{min-height:120px;resize:vertical} button{border:0;cursor:pointer;background:var(--blue);color:white;padding:14px 20px;border-radius:8px;font:inherit;font-weight:bold}
+#notice{color:#17633a;font-weight:bold} footer{background:var(--navy);color:#cbd8f0;padding:25px max(7vw,24px)}
+.sample-placeholder{padding:50px 20px;text-align:center;background:#f3f7ff;color:#52627c}
+@media(max-width:600px){header{align-items:flex-start;flex-direction:column}nav a{margin:0 15px 0 0}.hero{padding-top:62px;padding-bottom:62px}}
+</style>
 </head>
 <body>
-  <header>
-    <div class="logo">NEXORA</div>
-    <nav aria-label="Main navigation">
-      <a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="eyebrow">A new digital venture</div>
-      <h1>Build Tomorrow, Today.</h1>
-      <p>Practical digital support for local businesses — from a simple online presence to clear, professional social media designs.</p>
-      <a class="cta" href="#services">Explore what we do</a>
-    </section>
-
-    <section id="services">
-      <h2>What we’re building</h2>
-      <p class="intro">NEXORA is starting small, with useful digital services designed to help local businesses take their next step online.</p>
-      <div class="cards">
-        <article class="card"><h3>Simple Websites</h3><p>Clean, mobile-friendly websites that explain a business and make it easier for customers to get in touch.</p></article>
-        <article class="card"><h3>Social Media Designs</h3><p>Promotional posters and social media creatives for offers, products, and announcements.</p></article>
-        <article class="card"><h3>Digital Setup</h3><p>Help organising basic business information and creating a more consistent online presence.</p></article>
-      </div>
-    </section>
-
-    <section id="about" class="about">
-      <h2>Starting with a clear purpose</h2>
-      <p class="intro">NEXORA is an early-stage idea with a simple goal: make useful digital tools and services easier to access for small businesses. We’re building step by step, learning from real needs, and keeping things practical.</p>
-    </section>
-
-    <section id="contact">
-      <h2>Let’s talk</h2>
-      <p class="intro">Have an idea or need a digital service? Send a message below. This demo form shows how an inquiry would look; it does not send or store messages yet.</p>
-      <form id="contactForm">
-        <input name="name" placeholder="Your name" aria-label="Your name" required>
-        <input name="email" type="email" placeholder="Your email" aria-label="Your email" required>
-        <textarea name="message" placeholder="How can NEXORA help?" aria-label="Your message" required></textarea>
-        <button type="submit">Preview message</button>
-        <div id="notice" role="status" aria-live="polite"></div>
-      </form>
-    </section>
-  </main>
-
-  <footer>© <span id="year"></span> NEXORA. An early-stage digital venture.</footer>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-      event.preventDefault();
-      document.getElementById('notice').textContent =
-        'Demo only: your message has not been sent. Add a real contact method before publishing.';
-    });
-  </script>
-</body>
-</html>
+<header><div class="logo">NEXORA</div><nav aria-label="Main navigation">
+<a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#about">About</a><a href="#contact">Contact</a>
+</nav></header>
+<main>
+<section class="hero"><div class="eyebrow">Digital support for local businesses</div>
+<h1>Build Tomorrow, Today.</h1>
+<p>Practical digital support for Kashmir businesses — from simple websites to professional social media designs.</p>
+<a class="cta" href="#portfolio">View our sample work</a></section>
+<section id="services"><h2>How we can help</h2>
+<p class="intro">Useful, straightforward digital services for small businesses taking their next step online.</p>
+<div class="cards">
+<article class="card"><h3>Simple Websites</h3><p>Clean, mobile-friendly pages that explain your business and help customers find you.</p></article>
+<article class="card"><h3>Social Media Designs</h3><p>Promotional posters and social media creatives for offers, products and announcements.</p></article>
+<article class="card"><h3>Digital Branding</h3><p>Consistent business visuals and organised online information.</p></article>
+</div></section>
+<section id="portfolio" class="about"><h2>Sample portfolio</h2>
+<p class="intro">A first concept created to demonstrate the kind of promotional design NEXORA can make.</p>
+<article class="portfolio-card"><img src="assets/restaurant-sample-poster.png" alt="NEXORA fictional restaurant advertising concept" loading="lazy">
+<div class="portfolio-copy"><span class="tag">CONCEPT PROJECT</span><h3>Restaurant promotion — Kashmir-inspired theme</h3>
+<p class="note">Fictional sample for portfolio demonstration only. Not a real client or endorsement. Contact details and location shown in the artwork are illustrative and must not be treated as real.</p></div></article>
+</section>
+<section id="about"><h2>Starting with a clear purpose</h2>
+<p class="intro">NEXORA is an early-stage digital venture focused on helping local businesses build a useful, professional online presence. We are starting small, learning from real needs, and growing step by step.</p></section>
+<section id="contact"><h2>Let’s talk</h2>
+<p class="intro">Interested in a website or promotional design? This demo form previews an inquiry; it does not send or store messages yet.</p>
+<form id="contactForm"><input name="name" placeholder="Your name" aria-label="Your name" required>
+<input name="email" type="email" placeholder="Your email" aria-label="Your email" required>
+<textarea name="message" placeholder="What does your business need?" aria-label="Your message" required></textarea>
+<button type="submit">Preview message</button><div id="notice" role="status" aria-live="polite"></div></form>
+</section>
+</main>
+<footer>© <span id="year"></span> NEXORA. An early-stage digital venture.</footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();document.getElementById('notice').textContent='Demo only: your message has not been sent. Add a real contact method before publishing.';});
+</script>
+</body></html>

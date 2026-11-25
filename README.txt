@@ -1,0 +1,1 @@
+NEXORA portfolio website update\n\nUpload index.html to the root of your existing GitHub repository and replace the old file. If the assets folder is included, upload it too so the portfolio poster appears. The contact form is a demo only and does not send messages. The restaurant poster is a fictional concept; its contact/location details are illustrative.\n
